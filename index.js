@@ -54,7 +54,7 @@ document.getElementById("submit").onclick = function (){
     }
     console.log("điểm", mark);
     resultEl.innerHTML +=`<p>ĐIỂM CHUẨN: 12</p>`
-    if(mark > 10 ){
+    if(mark > 12 ){
         resultEl.innerHTML += `<p>KẾT QUẢ THI TUYỂN: ĐẬU - SỐ ĐIỂM ĐẠT ĐƯỢC: ${mark}</p>`
     } else{
         resultEl.innerHTML += `<p>KẾT QUẢ THI TUYỂN: RỚT - SỐ ĐIỂM ĐẠT ĐƯỢC: ${mark}</p>`
