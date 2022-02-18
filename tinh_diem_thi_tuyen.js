@@ -50,12 +50,25 @@ document.getElementById("submit").onclick = function (){
         }   
     }
     else if (mark1 || mark2 || mark3 == 0){
-        mark = 0;
+        if(subjectEl == 1){
+            mark = 0;
+            sum += 2.5;
+        } else if(subjectEl == 2){
+            mark =  0;
+            sum += 1.5;
+        } else if(subjectEl == 3){
+            mark = 0;
+            sum += 1;
+        } else{
+            mark = 0;
+        }   
     }
     console.log("điểm", mark);
     resultEl.innerHTML +=`<p>ĐIỂM CHUẨN: 12</p>`
     if(mark >= 12 ){
         resultEl.innerHTML += `<p>KẾT QUẢ THI TUYỂN: ĐẬU - SỐ ĐIỂM ĐẠT ĐƯỢC: ${mark}</p>`
+    } else if(mark == 0){
+        resultEl.innerHTML += `<p>KẾT QUẢ THI TUYỂN: RỚT - SỐ ĐIỂM ĐẠT ĐƯỢC: ${sum}</p>`
     } else{
         resultEl.innerHTML += `<p>KẾT QUẢ THI TUYỂN: RỚT - SỐ ĐIỂM ĐẠT ĐƯỢC: ${mark}</p>`
     }
