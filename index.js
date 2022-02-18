@@ -8,7 +8,7 @@ document.getElementById("submit").onclick = function (){
     let sum = Number(mark1) + Number(mark2) + Number(mark3);
     console.log("tổng điểm 3 môn:", sum);
     let mark;
-    if(Number(mark1) && Number(mark2) && Number(mark3) > 0, districtEl === 'a' ) {
+    if(Number(mark1) && Number(mark2) && Number(mark3) > 0, districtEl === 'a') {
         if(subjectEl == 1){
             mark = sum + 2 + 2.5;
         } else if(subjectEl == 2){
@@ -18,7 +18,7 @@ document.getElementById("submit").onclick = function (){
         } else{
             mark = sum + 2;
         }   
-    } else if(Number(mark1) && Number(mark2) && Number(mark3) > 0, districtEl === 'b' ){
+    } else if(Number(mark1) && Number(mark2) && Number(mark3) > 0, districtEl === 'b'){
         if(subjectEl == 1){
             mark = sum + 1 + 2.5;
         } else if(subjectEl == 2){
@@ -28,7 +28,7 @@ document.getElementById("submit").onclick = function (){
         } else{
             mark = sum + 1;
         }   
-    }else if(Number(mark1) && Number(mark2) && Number(mark3) > 0, districtEl === 'c' ){
+    }else if(Number(mark1) && Number(mark2) && Number(mark3) > 0, districtEl === 'c'){
         if(subjectEl == 1){
             mark = sum + 0.5 + 2.5;
         } else if(subjectEl == 2){
@@ -53,6 +53,7 @@ document.getElementById("submit").onclick = function (){
         mark = 0;
     }
     console.log("điểm", mark);
+    resultEl.innerHTML +=`<p>ĐIỂM CHUẨN: 12</p>`
     if(mark > 10 ){
         resultEl.innerHTML += `<p>KẾT QUẢ THI TUYỂN: ĐẬU - SỐ ĐIỂM ĐẠT ĐƯỢC: ${mark}</p>`
     } else{
