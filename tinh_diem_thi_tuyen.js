@@ -42,9 +42,3 @@ document.getElementById("submit").onclick = function (){
     console.log(resultEl)
 
 }
-
-let j = 1;
-for (let i = 0; i > 10_000; j++ ) {
-    i += j;
-    console.log(j);
-}
